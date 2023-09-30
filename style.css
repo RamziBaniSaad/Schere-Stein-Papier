@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all ease-in-out .1s;
+    -webkit-user-select: none;
+    user-select: none;
+    font-family: 'Lilita One', cursive;
+    font-size: 28px;
+}
+
+/* Body Struktur */
+body {
+    background: #706fd3;
+    color: #fff;
+}
+#container {
+    width: 50%;
+    min-height: 500px;
+    min-width: 700px;
+    margin: auto;
+    padding: 0px 30px 0px 30px;
+    border-radius: 50px;
+    background: #474787;
+}
+#introSection {
+    margin: 30px;
+}
+#introSection h1 {
+    margin: 10px 0 30px 0;
+    text-align: center;
+    text-decoration: underline 10px #2c2c54;
+    font-size: 70px;
+}
+#introSection h1:hover {
+    transform: translateY(-10px);
+    text-shadow: 0 0 5px #f7f1e3
+}
+#choiceSection {
+    margin: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    text-align: center;
+}
+#choiceSection p {
+    text-decoration: underline 5px #f2ead9;
+    margin: auto;
+    margin-bottom: 30px;
+}
+#playerChoiceDiv {
+    margin: 30px;
+    height: 150px;
+    width: 200px;
+}
+#playerChoiceText {
+    background: #ffffff50;
+    border-radius: 30px;
+    width: 200px;
+    height: 40px;
+}
+#playerChoice {
+    border-radius: 5px;
+    padding-bottom: 25px;
+    font-size: 35px;
+    text-shadow: 0 0 10px #2c2c54;
+    width: 200px;
+}
+#playerChoice:hover {
+    text-shadow: 0 0 5px #f2ead9;
+    padding: 0;
+}
+#botChoiceDiv {
+    margin: 30px;
+    height: 150px;
+    width: 200px;
+}
+#botChoiceText {
+    background: #ffffff50;
+    border-radius: 30px;
+    width: 200px;
+    height: 40px;
+}
+#botChoice {
+    border-radius: 5px;
+    padding-bottom: 25px;
+    font-size: 35px;
+    text-shadow: 0 0 10px #2c2c54;
+    width: 100px;
+}
+#botChoice:hover {
+    text-shadow: 0 0 5px #f2ead9;
+    padding: 0;
+}
+#resultSection {
+    margin: 50px;
+    height: 130px;
+    padding: 30px;
+    margin: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+#result {
+    font-size: 45px;
+    text-shadow: 0 0 30px #2c2c54;
+    padding: 20px;
+}
+#result:hover {
+    font-size: 40px;
+    text-shadow: 0 0 20px #2c2c54;
+    transform: scale(1.5) ;
+}
+#selectionSection {
+    margin: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis: 00px;
+}
+#selectionSection button {
+    margin: 30px;
+    width: 200px;
+    height: 250px;
+    border: 10px #2c2c54 solid;
+    border-radius: 20px;
+    background: #706fd3;
+    color: #fff;
+    font-size: 35px;
+}
+#selectionSection button:hover {
+    letter-spacing: 2px;
+    color: #2c2c54
+}
+#selectionSection img {
+    width: 130px;
+    margin-bottom: 10px;
+    -webkit-user-drag: none;
+}
+
+/* Speziell */
+
+.sightHelp {
+    border: white 1px solid;
+}
+.teamPlayer {
+    color: #0000ff !important;
+}
+.teamBot {
+    color: #ff0000 !important;
+}
+.drawStyle {
+    color: #ffb142 !important;
+    text-shadow: 0 0 5px #2c2c54 !important;
+    text-decoration: wavy underline;
+}
+.readyState {
+    color: #9c9c9c !important;
+}
+.noStyle {
+    text-decoration: none !important;
+}
+.wonAnimation {
+    transform: translateY(-35px) scale(1.5);
+}
+.lostAnimation {
+    transform: translateY(35px) scale(1.5);;
+}
+.drawAnimation {
+    transform: scale(1.5);
+}
+.resultAnimation {
+    text-shadow: 0 10px 30px #ffb142 !important;
+}
+.wonBackground {
+    background: #0000ff50 !important;;
+}
+.lostBackground {
+    background: #ff000050 !important;
+}
+.drawBackground {
+    background: #ffb14290 !important;
+}
+.fightBackground {
+    background-color: #474787 !important;
+}
+@media only screen and (min-width: 700px) {
+    .fightButton {
+        background: #9c9c9c !important;
+    }
+    .fightAnimation1 {
+        transform: translateX(50px);
+    }
+    .fightAnimation2 {
+        transform: translateX(-50px);
+    }
+    .fightAnimation3 {
+        transform: translateX(25px);
+    }
+}
+@media only screen and (max-width: 700px) {
+    .fightAnimationS {
+        background: #9c9c9c !important;
+    }
+}

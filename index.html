@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Schere Stein Papier!</title>
+</head>
+<body>
+    <div id="container">
+        <div id="introSection">
+        <h1>Schere Stein Papier</h1>
+        </div>
+        <div id="choiceSection">
+            <div id="playerChoiceDiv">
+                <p id="playerChoiceText">Deine Wahl</p>
+                <span id="playerChoice" class="readyState">?</span>
+            </div>
+            <div id="botChoiceDiv">
+                <p id="botChoiceText">Bot Wahl</p>
+                <span id="botChoice" class="readyState">?</span>
+            </div>
+        </div>
+        <div id="resultSection">
+            <span id="result" class="readyState">???</span>
+        </div>
+        <div id="selectionSection">
+            <button id="schere"><img alt="Schere" src="img/schere.png">Schere</button>
+            <button id="stein"><img alt="Stein" src="img/stein.png">Stein</button>
+            <button id="papier"><img alt="Papier" src="img/papier.png">Papier</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
